@@ -66,19 +66,7 @@ function validAk($ak){
                 return  0;
                 }
             }
-        if (substr($ak, 0,1) > 7 && substr($ak, 0,1) < 2) {
-            addMessage('error', 'Asmens kodas negaliojantis');
-            return 0;
-        }
-        elseif ((($sum % 11) != 10) && $lastNr == (($sum % 11) != 10)){
-            return 1;
-        } 
-        elseif ((($sum2 % 11) != 10) && $lastNr == (($sum % 11) != 10)){
-            return  1;
-        }
-        elseif ($lastNr == 0){
-            return  1;
-        }
+        
     }
     else {
         addMessage('error', 'Asmens kodas neatitinka nustatytų LR taisyklių');
